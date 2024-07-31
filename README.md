@@ -4,4 +4,5 @@
 #  so I went through and added comments are certain bits to hopefully catch you up
 #  if somehow after working on this project you manage to improve the winrate on the standardized 907 test, message me because
 #  that's pretty interesting. Also try to be genuine with it because it is an incredibly easy thing to fake.
+#  Make sure it's able to score the same wr consistently.
 #change these variables to the path of the files
