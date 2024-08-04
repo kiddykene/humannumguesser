@@ -12,7 +12,7 @@ import xgboost as xgb
 #  that's pretty interesting. Also try to be genuine with it because it is an incredibly easy thing to fake.
 #change these variables to the path of the files
 checknumberbutton = r"button_check-number.png"
-standardizedtestbutton = r"button_run-test.png"
+standardizedtestbutton = r"button_run-test (1).png"
 correctsfx = r"corrrrrrrect.mp3"
 wrongsfx = r"wronnggg.mp3"
 
