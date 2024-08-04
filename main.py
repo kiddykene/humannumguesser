@@ -11,10 +11,10 @@ import xgboost as xgb
 #  if somehow after working on this project you manage to improve the winrate on the standardized 907 test, message me because
 #  that's pretty interesting. Also try to be genuine with it because it is an incredibly easy thing to fake.
 #change these variables to the path of the files
-checknumberbutton = r"E:\Downloads\button_check-number.png"
-standardizedtestbutton = r"E:\Downloads\button_run-test (1).png"
-correctsfx = r"E:\Music\corrrrrrrect.mp3"
-wrongsfx = r"E:\Music\wronnggg.mp3"
+checknumberbutton = r"button_check-number.png"
+standardizedtestbutton = r"button_run-test.png"
+correctsfx = r"corrrrrrrect.mp3"
+wrongsfx = r"wronnggg.mp3"
 
 
 global temp, tempc, next_element, confidence, nextfirstdiff, nextseconddiff
