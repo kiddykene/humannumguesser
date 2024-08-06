@@ -6,3 +6,4 @@
 #  that's pretty interesting. Also try to be genuine with it because it is an incredibly easy thing to fake.
 #  Make sure it's able to score the same wr consistently.
 #change these variables to the path of the files
+Ps. If you are running this program on GNU/Linux you need root, because python package `keyboard` require root.

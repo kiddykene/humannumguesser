@@ -11,6 +11,9 @@ import xgboost as xgb
 #  if somehow after working on this project you manage to improve the winrate on the standardized 907 test, message me because
 #  that's pretty interesting. Also try to be genuine with it because it is an incredibly easy thing to fake.
 #change these variables to the path of the files
+
+#If you are running this program on GNU/Linux you need root, because package keyboard require root.
+
 checknumberbutton = r"button_check-number.png"
 standardizedtestbutton = r"button_run-test (1).png"
 correctsfx = r"corrrrrrrect.mp3"
