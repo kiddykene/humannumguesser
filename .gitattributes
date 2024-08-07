@@ -1,6 +1,6 @@
-frequency_1.txt binary
-frequency_2.txt binary
-dataset_0.txt binary
-dataset_1.txt binary
-dataset_2.txt binary
-dataset_test.txt binary
+frequency_1.py binary
+frequency_2.py binary
+dataset_0.py binary
+dataset_1.py binary
+dataset_2.py binary
+dataset_test.py binary

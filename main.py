@@ -4,6 +4,13 @@ import numpy as np
 from sklearn.ensemble import RandomForestRegressor
 import xgboost as xgb
 
+from dataset_0 import dataset
+from dataset_1 import firstdataset
+from dataset_2 import seconddataset
+from dataset_test import testsample
+from frequency_1 import frequency
+from frequency_2 import frequency2
+
 #thanks for downloading, some brief things if you wanna further tweak this project:
 #  the current winrate on the 907 standardized test is 11.246%
 #  I did explain lots of the main system in my video (poorly ofc)
@@ -19,26 +26,8 @@ standardizedtestbutton = r"button_run-test (1).png"
 correctsfx = r"corrrrrrrect.mp3"
 wrongsfx = r"wronnggg.mp3"
 
-
 global temp, tempc, next_element, confidence, nextfirstdiff, nextseconddiff
 inputted, firstdiff, seconddiff, temp, tempc, win, train, firstinp, secondinp, played = [], [], [], [], [], 0, [], [], [], []
-dataset = []
-firstdataset = []
-seconddataset = []
-testsample = ()
-#most common first and second digit people went too in the dataset after the last number was entered
-frequency = {}
-#most common full number that was entered in the dataset after each prior number. This ever so slightly differs from the first frequency but i saw it improved winrate to distribute this as well
-frequency2 = {}
-file_paths = ['dataset_0.txt', 'dataset_1.txt', 'dataset_2.txt', 'frequency_1.txt', 'frequency_2.txt', 'dataset_test.txt']
-
-def read_and_exec(file_path):
-    with open(file_path, 'r') as file:
-        dataset_content = file.read()
-    exec(dataset_content,globals())
-
-for path in file_paths:
-    read_and_exec(path)
 
 def prepare_data(sequence, n_lags=2):
     X, y = [], []
@@ -46,7 +35,7 @@ def prepare_data(sequence, n_lags=2):
         X.append(sequence[i:i + n_lags])
         y.append(sequence[i + n_lags])
     return np.array(X), np.array(y)
-
+    
 #random forrest regressor func
 def predict_next(sequence, n_lags=2):
     if len(sequence) < n_lags + 1: raise ValueError("short")
@@ -439,7 +428,7 @@ class CountdownTimer(tk.Tk):
                                     font=("Helvetica", 36), fill='red')
 
 #initialization
-keyboard.on_press_key("enter", numinput)
+#keyboard.on_press_key("enter", numinput)
 pygame.mixer.init()
 timerup = False
 root = tk.Tk()
