@@ -4,8 +4,7 @@ import numpy as np
 from sklearn.ensemble import RandomForestRegressor
 import xgboost as xgb
 from data import dataset, firstdataset, seconddataset, testsample, frequency, frequency2
-import warnings
-warnings.filterwarnings("ignore")
+
 assets = r"assets/"
 checknumberbutton = assets + r"images/check.png"
 standardizedtestbutton = assets + r"images/run907.png"
