@@ -4,6 +4,8 @@ import numpy as np
 from sklearn.ensemble import RandomForestRegressor
 import xgboost as xgb
 from data import dataset, firstdataset, seconddataset, testsample, frequency, frequency2
+import warnings
+warnings.filterwarnings("ignore")
 #thanks for downloading, some brief things if you wanna further tweak this project:
 #  the current winrate on the 907 standardized test is 11.246%
 #  I did explain lots of the main system in my video (poorly ofc)
